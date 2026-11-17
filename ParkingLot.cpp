@@ -18,6 +18,9 @@ int ParkingLot::remove(int spotNum, int hours)
     if (spotNum < 0 || spotNum >= lot.size()){
         return 0;
     }
+    if (hours <= 0){
+        return 0;
+    }
     bool check = lot[spotNum].remove();
     if (check){
         return (cost * hours);

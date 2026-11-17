@@ -84,7 +84,7 @@ int main()
 
             int charge = lot.remove(spotNum, hours);
 
-            if (charge < 0)
+            if (charge == 0)
             {
                 std::cout << "Unable to remove car. Check the spot number and hours.\n";
             }
